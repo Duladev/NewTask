@@ -1,0 +1,8 @@
+If still facing the 'Thank you for choosing our product , Goto Installation' screen event. 
+The possible issue is that the admin panel couldn't connect to the api (backend). All you need do is edit the file:
+
+..\demand24_admin-main\src\configs\app-global.js
+
+change info your domain:
+export const BASE_URL = 'https://api.demand24.org';
+export const WEBSITE_URL = 'https://demand24.org';
